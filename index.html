@@ -2,54 +2,99 @@
 <html>
     <head>
     <style>
-       h1{ color:pink;
+        h1{ color:black;
            font-family: cursive;
            font-size: 2.1em;
            text-decoration: underline;}
        em{color: red;}
        h3{color:pink;
           font-family: cursive;
-          font-size: 2em;
+          font-size: 1.7em;
           text-decoration: underline;}
-       p{ color:blue}
-       body{ background-color:rgb(0, 100, 100);
+       p{ color:black;}
+       body{ background-color:rgb(0,100,100);
             font: monospace 15px;
+            margin: 20px;
+            border-top: 10px solid black; 
+            border-left: 15px dotted yellow;
+            border-right: 5px dotted yellow;
              }
        ol{ color:yellow;
            text-align: center;
-           font-size: 1.2em;
+           font-size: 1em;
            text-decoration: underline;
            font-weight: bold;}
        #compute-fun { color: orange;
                       font-family: cursive
                       font-weigh: bold;}
        .fun-time { color: pink;
-                   font-family: monospace}
+                   font-family: sans-serif;}
        .tech{color:yellow;}
-       .less{color: lightblue;}
+       #less{color: lightblue;}
        #gooder{color:brown;}
        a{color: yellow;
-         text-decoration: none;}
+         text-decoration: none;
+         margin: 0px 0px 0px 30px;}
        #third { text-align: center;}
-        ul{color: pink;}
-        div{background-color:rgb(50,50,50);}
-        #l-para{ color: pink;}
-        #h-list{text-align: center;
-                text-decoration: underline;}
+       ul{color: pink;}
+       div{background-color:rgb(50,50,50);}
+       #cute{ float: right;
+              width: 50%;
+              border: 5px solid yellow;}
+       #darn{ color: pink;}
+       #h-list{text-align: center;
+               text-decoration: underline;}
+       #label{ font-family: sans-serif ;}
+       .chosen{font-style: italics;} 
+        #book{ width: 40%;
+               height: 240px;
+               overflow-y: auto;
+               overflow-x: hidden;
+               margin: 0px 0px 0px 30px;
+               background-color:rgb(63, 64, 59);}
+        #glass{ margin: 0px 0px 0px 30px;
+                border: 6px ridge yellow;
+                position:relative;
+                left: 10px;}
+        #second-image{width: 150px;
+                      position:absolute;
+                      left: 400px;
+                      border: 5px ridge yellow;
+                      z-index:1;}
+       #third-image{width: 100px;
+                     position:absolute;
+                     left:400px;
+                     top: 185px;
+                     z-index:2;
+                     border-left:5px ridge yellow;}
+       #absolute-div{ border: 6px ridge black;
+                      position: absolute;
+                      left: 600px;
+                      top: 390px;
+                      background-color:yellow;
+                      padding-left:5px;
+                      padding-right: 5px;}
+       
     </style>
        <title> PROGRAMMING IS FUN><</title>
-       <meta charset="utf-8">
+       <meta charset="UTF-8">
     </head>
     <body>
-  <!-- Hello kaleb, some more font names are-sans-serif,serif,fantasy,"helvetica". and we can write font instead of font size and font style and font anything altogether.-->
-        <h1 id="cake"> <strong class="less">WHAT</strong> MAKES IT FUN</h1>
+  <!-- Hello kaleb, some more font names are-sans-serif,serif,fantasy,"helvetica". and we can write font instead of font size and font style and font anything altogether. position css tag is just like margin when used in relative but when used in absolute overlapping occurs. -->
+    <h1 id="cake"> WHAT MAKES IT FUN</h1>
     <a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=pictures+of+old+computers"> Pictue's of old computers <br>
-     <img src="list.png.png" width="201"/> 
+     <img id="glass" src="https://linustechtips.com/uploads/monthly_05_2013/post-20742-0-03137200-1369529447_thumb.jpg" width="270" height="250"/> 
     </a>
-    <p id="compute-fun"><strong>You can do it sitting in your bed! Jockes aside, u can accomplish so much using programming.</strong> <br>
+   <img id="second-image" src="https://thumbs.dreamstime.com/b/modern-comfortable-gaming-chair-isolated-white-background-162839671.jpg"/>
+   <img id="third-image" src="https://pngset.com/images/sitting-in-air-anime-manga-comics-book-person-transparent-png-1591799.png"/>
+    <div id="absolute-div"><p>
+           "Programming isn't about what you know; it's about what you can figure out.” - Chris Pine
+</p></div>
+   
+   <div id="book"> <p id="compute-fun"><strong>You can do it sitting in your bed! Jockes aside, u can accomplish so much using programming.</strong> <br>
          <strong>creating games with it is what makes it really fun tho truth be told</strong>.</p>
-    <h3 id="third"><strong class="less">Why</strong> is it fun?</h3>
-    <ol> <li><em>You</em> can use your imagination</li>
+    <h3 id="third"><strong id="less">Why</strong> is it fun?</h3>
+    <ol> <li><em>You</em> can use your <span class="chosen">imagination</span></li>
          <li>can create whats thought beyond limis</li>
          <li><em>You</em> can create what <em>You</em> want</li>
 
@@ -59,9 +104,9 @@
     
     <p class="fun-time"> Where to start might have been a very good question?... Well there'se <strong class="tech">Youtube!</strong> <br>
      youtube brings a lot of different methods to learn despite constant never changing school systems. <br> 
-     see what fits you best and ignore others that dont.</p>
-   <div> <h3> <strong>Pros and Cons</strong></h3>
-   
+     see what fits you best and ignore others that dont.</p> </div> <br> <div id="cute">
+   <h3> <strong>Pros and Cons</strong></h3>
+  
  <table>
     <thead>
      <tr>
@@ -88,19 +133,19 @@
      </tr>
     </tbody>
     </table>
-        <h3> Cool <strong class="less">FACTS</srong> About Programming and Coding You <strong class="less">NEED</strong> to Know</h3>
-<ul>
+ <h3> Cool FACTS About Programming and Coding You NEED to Know</h3>
+<ul id="label">
     <li>Coding has over 700 languages</li>
     <li>Coding Bugs were NOT named after an actual bug</li>
     <li>Coding will soon be as important as reading.</li>
     <li>The first programmer was the daughter of a mad poet</li>
-</ul>   <br>
- <p id="l-para"> It may seem hard to find which site is best for you personally regarding learning the complexity of programming.<br>
+</ul> <br>
+ <p id="darn"> ->It may seem hard to find which site is best for you personally regarding learning the complexity of programming.<br>
      <em> You</em> may find these sites useful <ul id="h-list">
                                                               <li> <a target="_blank" href="https://www.khanacademy.org"> Khan academy</a></li>
                                                               <li> <a target="_blank" href="https://www.sonarqube.org/features/multi-languages/?gads_campaign=ROW-3-Generic&gads_ad_group=Languages&gads_keyword=c%20code%20checker&gclid=Cj0KCQiAieWOBhCYARIsANcOw0w9_6DXtI8Sfr4OdmPW7cazMrKCQ2vR5ISVlMpWUeocfRCPtFH0VJ4aAn7ZEALw_wcB"> SonarQube</a></li>
                                                </ul>
-       <p class="tech"> <a href="#cake">Back to top</a></p> </div>
+  <p class="tech"> <a href="#cake">Back to top</a></p> </div>
     </body>
     
 </html>
